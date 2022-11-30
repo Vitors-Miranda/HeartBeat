@@ -1,0 +1,1 @@
+var EnderecoLink = "/localhost/heartbeat/";

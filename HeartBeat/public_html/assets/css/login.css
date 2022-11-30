@@ -1,0 +1,142 @@
+@import url("root.css");
+@import url("gradiente.css");
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    height: 85vh;
+}
+
+#titulo{
+    transition: 0.5s;
+    width: 500px;
+}
+
+
+nav{
+    transition: 1s;
+    cursor: pointer;
+    font-size: 1.25rem;
+    min-height: 7vh;
+}
+
+.dourado{
+    color: var(--dourado);
+}
+
+#texto{
+    background-color: var(--light);
+    height: 40vh;
+    width: 100%;
+}
+
+#navbarText{
+    transition: all 0.5s;
+}
+
+#texto{
+    color: white;
+    display: flex;
+}
+.esquerda{
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 500px;
+}
+.esquerda:hover{
+    padding-left: 20px;
+}
+.direita{
+width: 300px;
+font-size: 1.25rem;
+}
+
+#apresentacao{
+    height: 80vh;
+    padding: 0 10%;
+}
+
+footer{
+    min-height: 20vh;
+    padding: 0 10%;
+    transition: 1s;
+    border-radius:100px 100px 0 0;
+}
+#icongroup{
+    padding:10px 0;
+    text-align:center;
+}
+#icongroup i{
+    padding:10px;
+}
+#copyright{
+    margin-bottom:10px;
+}
+ul {
+    list-style-type:none;
+}
+li{
+    text-align: center;
+}
+
+article{
+    min-height: 30vh;
+    background: linear-gradient(-45deg, #1f369c, #3b9ec2, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color:white;
+}
+@media (min-width: 720px) { 
+    article{
+        height:70vh;
+    }
+}
+aside{
+    height:70vh;
+}
+#caixa{
+    height:100vh;
+}
+#myTab{
+    max-width:180px;
+}
+.tabs{
+    transition: 0.5s;
+    color:var(--dourado);
+}
+.tabs:hover{
+    color:var(--dourado);
+}
+
+.link{
+    text-decoration:none;
+    color:var(--dourado);
+    transition:0.3s;
+    font-size: 0.7rem;
+}
+.link:hover{
+    color:var(--light);
+}
+
+.btn{
+    border: 1px solid var(--dourado);
+    width:180px;
+    transition:0.4s;
+    color: var(--dourado);
+}
+.tab-pane{
+    transition:0.2s;
+}
+
+.form-check-label{
+    font-size:0.7rem;
+}
+
+#Toast{
+    position:absolute;
+    bottom: 25px;
+    left: 25px;
+} 

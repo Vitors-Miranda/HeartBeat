@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="../assets/img/heart-pulse-fill.svg">
+    <title>Login | Heartbeat </title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="caixa" class="row d-flex align-items-center justify-content-center">
+            <article
+                class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center flex-column p-5 text-center shadow-lg color-light rounded">
+                <h3>Bem vindo!</h3>
+                <p>Mantenha-se conectado para gerenciar as agendas</p>
+            </article>
+            <aside class="col-md-6 col-sm-12 shadow-lg d-flex align-items-center justify-content-center flex-column">
+                <ul class="nav nav-tabs d-flex align-items-center justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="tabs nav-link active" id="entrar-tab" data-bs-toggle="tab"
+                            data-bs-target="#entrar-tab-pane" type="button" role="tab" aria-controls="entrar-tab-pane"
+                            aria-selected="true">Entrar</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="tabs nav-link" id="cadastrar-tab" data-bs-toggle="tab"
+                            data-bs-target="#cadastrar-tab-pane" type="button" role="tab"
+                            aria-controls="cadastrar-tab-pane" aria-selected="false">Cadastrar</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="entrar-tab-pane" role="tabpanel"
+                        aria-labelledby="entrar-tab" tabindex="0">
+                        <form id="formlogin">
+                            <!-- entrar -->
+                            <div class="text-center">
+                                <div class="input-group input-group-sm p-3">
+                                    <span class="input-group-text" id="email">@</span>
+                                    <input type="email" name="loginemail" id="loginemail" class="form-control"
+                                        placeholder="Digite seu e-mail" required>
+                                </div>
+                                <div class="input-group input-group-sm px-3 my-3">
+                                    <span class="input-group-text" id="senha"><i class="bi bi-lock"></i></span>
+                                    <input type="password" name="loginsenha" id="loginsenha" class="form-control"
+                                        placeholder="Digite sua senha" required>
+                                </div>
+                                <button type="submit" class="btn rounded-pill">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="cadastrar-tab-pane" role="tabpanel" aria-labelledby="cadastrar-tab"
+                        tabindex="0">
+                        <form id="formcad">
+                            <!-- cadastrar -->
+                            <div class="text-center">
+                                <div class="input-group input-group-sm p-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="email" class="form-control" placeholder="Digite o email" id="email"
+                                        name="email" required>
+                                </div>
+                                <div class="input-group input-group-sm p-3">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Nome" name="nome" id="nome"
+                                        required>
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome"
+                                        id="sobrenome" required>
+                                </div>
+                                <div class="input-group input-group-sm px-3 my-3">
+                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                    <input type="password" class="form-control" placeholder="Digite sua senha"
+                                        id="senha" name="senha" required>
+                                </div>
+                                <button type="submit" class="btn rounded-pill">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- toast -->
+                    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true"
+                        id="Toast">
+                        <div class="d-flex">
+                            <div class="toast-body" id="ToastBody">
+                            </div>
+                            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</body>
+<script src="../assets/js/EnderecoLink.js"></script>
+<script src="../assets/js/toast.js"></script>
+<script src="../assets/js/cadastrar.js"></script>
+<script src="../assets/js/logar.js"></script>
+</html>
