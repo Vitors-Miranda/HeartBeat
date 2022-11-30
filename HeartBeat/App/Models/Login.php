@@ -14,7 +14,6 @@ class Login
         $verificar->bindValue(":senha", sha1($data['loginsenha']));
         $verificar->execute();
         session_start();
-        return sha1($data['loginsenha']);
         $_SESSION["login"] = 0;
 
         if ($verificar->rowCount() === 1) {
